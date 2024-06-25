@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Library</h1>
+    </div>
+    <div id="main-container">
+        <dialog>
+            <p>Add new book</p>
+            <form method="dialog" id="bookForm">
+                <label for="title">Title</label><br>
+                <input type="text" id="title" name="title" placeholder="The Rise of Theodore Roosevelt" required><br>
+                <label for="author">Author</label><br>
+                <input type="text" id="author" name="author" placeholder="Edmund Morris" required><br>
+                <label for="pages">Pages</label><br>
+                <input type="number" id="pages" name="pages" placeholder="960" required><br>
+                <label for="bRead">Already read?</label><br>
+                <input type="checkbox" id="bRead" name="bRead"><br>
+                <input type="reset">
+                <input type="submit" id="formSubmit">
+            </form>
+        </dialog>
+
+        <button id="addBookBtn">+ Add book</button>
+
+        <div id="bookCase">
+            
+        </div>
+    </div>
+
+</body>
+<script src="source.js"></script>
+
+</html>
